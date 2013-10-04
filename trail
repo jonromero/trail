@@ -4,7 +4,12 @@
 # Jon Vlachogiannis (darksun4@gmail.com)
 # 4/10/2013
 
-filename="."$(whoami)"_trail"
+if [ -z $TRAIL_USER ] ; then
+    filename=".trails"
+else
+    filename="."$TRAIL_USER"_trails"
+fi
+
 NOW=$(date +"%d %B %Y %T")
 
 if [ $# -eq 0 ] ; then

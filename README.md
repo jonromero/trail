@@ -24,12 +24,9 @@ Installing trail
 
 Installing and setting up `trail` will take about a second.
 
-First, download the newest version of `trail` file and place it at "/usr/bin".
+First, download the newest version of `trail` file and place it inside "/usr/bin".
 
 And you are done!
-
-Now, when you run `trail some_text`, a "." file with your name and "_trail" will be created
-with that text and the current date, in the same path. This is a simple text file that you can open with a text editor. I usually have this file in the same root folder of my project.
 
 Using trail
 -------
@@ -57,8 +54,16 @@ Seeing your trail is even easier -- just use `trails -l number` while you are in
 
 ### Edit/Delete a trail
 
-All your trails are stored in a file called ."your_username"_trails inside your projects directory, so you can edit them using a text editor.
+All your trails are stored in a file called .trails inside your projects directory, so you can edit them using a text editor.
 
+### Add to repository
+Add the .trails file to your repository
+
+### Different users
+A user could have a personal trail by exporting TRAIL_USER:
+`export TRAIL_USER=yourname`
+
+Remember to run this everytime before you run trail (probably put it in your .bashrc)
 
 Contributions 
 ----------------------------
