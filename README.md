@@ -13,7 +13,7 @@ Whenever I am working on a project (especially a hobby/opensource project)
 and I haven't played around for a while, my main problem is that I don't remember
 what I was doing or why I have done certain things.
 
-The first version of trail was inspired by [t][], the simpliest todo manager out there,
+The first version of trail was inspired by (t)[https://bitbucket.org/sjl/t/], the simpliest todo manager out there,
 and it was written in Python (you can see older commits). After some thought, it was
 trivial to implement this in bash, so I did it.
 
