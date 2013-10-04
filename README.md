@@ -44,7 +44,7 @@ To add a trail, use `trail [thought]`:
 
 ### List Your trails
 
-Seeing your trail is even easier -- just use `trails -l number` while you are inside your project:
+Seeing your trail is even easier -- just use `trails -n number` while you are inside your project:
 
     $ trail -n 3
     9 of August 10:01 -> Trying out a new sorting algorithm
