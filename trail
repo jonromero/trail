@@ -1,0 +1,20 @@
+#!/bin/bash
+
+# Jot down your trail of thoughts
+# Jon Vlachogiannis (darksun4@gmail.com)
+# 4/10/2013
+
+filename="."$(whoami)"_trail"
+NOW=$(date +"%d %B %Y %T")
+
+if [ $# -eq 0 ] ; then
+    echo "Usage: $0 [text] [-l num_of_lines]"
+    exit 0
+fi
+
+if [ $# -eq 2 ] && [ $1 == "-n" ]; then
+    tail -n $2 $filename
+    exit 0
+fi
+
+echo $NOW "->" $@ >> $filename
