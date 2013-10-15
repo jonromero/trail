@@ -13,7 +13,7 @@ fi
 NOW=$(date +"%d %B %Y %T")
 
 if [ $# -eq 0 ] ; then
-    echo "Usage: $0 [text] [-l num_of_lines]"
+    echo "Usage: $0 [text] [-n num_of_lines]"
     exit 0
 fi
 
