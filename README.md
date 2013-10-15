@@ -24,7 +24,11 @@ Installing trail
 
 Installing and setting up `trail` will take about a second.
 
-First, download the newest version of `trail` file and place it inside "/usr/bin".
+First, download the newest version of `trail` file 
+
+`wget https://github.com/jonromero/trail/blob/master/trail`
+
+and place it inside "/usr/bin".
 
 And you are done!
 
