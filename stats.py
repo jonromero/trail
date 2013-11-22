@@ -5,7 +5,7 @@ def avg_time(datetimes):
   previous = None
   deltas = []
   for dt in datetimes:
-    if (previous):
+    if previous:
       d = dt - previous
       deltas.append(divmod(d.days * 86400 + d.seconds, 60))
     previous = dt
@@ -17,10 +17,13 @@ def avg_time(datetimes):
 with open(".trails","r") as theFile:
   fmt   = '%d %B %Y %H:%M:%S'
   times = []
+  counter = 0
   for line in theFile:
+    counter += 1
     data = line.split(' ->')[0]
     ts = datetime.strptime(data, fmt)
     times.append(ts)
 
   avg = avg_time(times)
-  print('\n  > Average time between trails is %d minutes and %d seconds.' % (avg[0], avg[1]) )
+  print('\n  [ %d mins %d sec ]\tYour average time between trails' % (avg[0], avg[1]) )
+  print('  [ %d ]\t\ttrails created so far in this project.' % counter )
