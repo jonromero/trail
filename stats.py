@@ -10,7 +10,9 @@ def avg_time(datetimes):
       deltas.append(divmod(d.days * 86400 + d.seconds, 60))
     previous = dt
 
-  return deltas
+  mins = sum([v[0] for v in deltas]) / len(deltas)
+  sec  = sum([v[1] for v in deltas]) / len(deltas)
+  return mins, sec
 
 with open(".trails","r") as theFile:
   fmt   = '%d %B %Y %H:%M:%S'
@@ -20,4 +22,5 @@ with open(".trails","r") as theFile:
     ts = datetime.strptime(data, fmt)
     times.append(ts)
 
-  print(avg_time(times))
+  avg = avg_time(times)
+  print('\n  > Average time between trails is %d minutes and %d seconds.' % (avg[0], avg[1]) )
