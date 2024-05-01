@@ -17,6 +17,8 @@ The first version of trail was inspired by [t](https://bitbucket.org/sjl/t/), th
 and it was written in Python (you can see older commits). After some thought, it was
 trivial to implement this in bash, so I did it.
 
+Update: In 2024, I converted it to Python - so it works across all platforms
+
 
 
 Installing trail
